@@ -1,0 +1,59 @@
+class Car:
+  def __init__(self): 
+    self.pas = 0
+    self.km = 0
+    self.fuel = 0
+    self.lim_pas = 2
+    self.lim_fuel = 10
+  
+  def entrar (self):
+    if self.pas < self.lim_pas:
+        self.pas += 1
+    else:
+      print ("Fail: limite de pessoas atingido ")
+
+  def tirar (self):
+    if self.pas > 0:
+      self.pas -= 1
+    else:
+      print ("Fail: nao ha ninguem no carro ")
+
+  def abastecer (self, qtd):
+    self.fuel += qtd
+    if self.fuel > self.lim_fuel:
+      self.fuel = self.lim_fuel
+
+  def dirigir (self, distancia):
+    gas_necessaria = distancia/10
+    if (self.fuel >= gas_necessaria):
+        self.km += distancia
+        self.fuel -= gas_necessaria
+    else:
+      print ("Fail: gasolina insuficiente ")
+
+
+  def __str__ (self):
+    return "pass:" + str(self.pas) + ", gas:" + str(self.fuel) + ", km:" + str(self.km)
+
+carro = Car()
+ui = ""
+print ("Digite show, in, out, fuel_qtd, drive_distancia ou end ")
+while (ui != "end"):
+  ui = input()
+
+  if ui == "end":
+    break
+  elif ui  == "show":
+    print (carro)
+  elif ui == "in":
+    carro.entrar ()
+  elif ui == "out":
+    carro.tirar ()
+  elif ui == "fuel":
+    qtd = int (input ())
+    carro.abastecer (qtd)
+  elif ui == "drive":
+    distancia = int (input ())
+    carro.dirigir (distancia)
+  else:
+    print ("Fail: comando invalido ")
