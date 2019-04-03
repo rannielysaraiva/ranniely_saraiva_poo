@@ -1,0 +1,75 @@
+class Calc:
+  def __init__(self):
+    self.carga_inicial = 0
+    self.bateria_max = 6
+  
+  def recarregar (self, qtd):
+    self.carga_inicial += qtd
+    if self.carga_inicial > self.bateria_max:
+      self.carga_inicial = self.bateria_max
+
+  def soma (self, n1,n2):
+    if self.carga_inicial > 0:
+      print (n1 + n2)
+      self.carga_inicial -=1
+    else:
+      print ("Bateria insuficiente ")
+
+  def sub (self, n1,n2):
+    if self.carga_inicial > 0:
+      print (n1 - n2)
+      self.carga_inicial -=1
+    else:
+      print ("Bateria insuficiente ")
+
+  def mult (self, n1,n2):
+    if self.carga_inicial > 0:
+      print (n1 * n2)
+      self.carga_inicial -=1
+    else:
+      print ("Bateria insuficiente ")
+
+  def div (self, n1,n2):
+    if self.carga_inicial > 0:
+      print (n1 / n2)
+      self.carga_inicial -=1
+    else:
+      print ("Bateria insuficiente ")
+
+  def __str__ (self):
+      return "bateria: " + str (self.carga_inicial)
+
+calculadora = Calc()
+ui = ""
+print ("Digite init, show, charge, sun, sub, mult ou div ")
+while(ui != "end"):
+    ui = input()
+    if ui == "end":
+      break
+
+    elif ui == "init":
+      print (Calc)
+    elif ui == "show":
+      print ("Bateria = : ", + calculadora.carga_inicial)
+    elif ui == "charge":
+      bat = int(input())
+      calculadora.recarregar (bat)
+
+    elif ui == "sum":
+      n1 = int (input())
+      n2 = int (input())
+      calculadora.soma (n1,n2)
+    elif ui == "sub":
+      n1 = int (input())
+      n2 = int (input())
+      calculadora.sub (n1,n2)
+    elif ui == "mult":
+      n1 = int (input())
+      n2 = int (input())
+      calculadora.mult (n1,n2)
+    elif ui == "div":
+      n1 = int (input())
+      n2 = int (input())
+      calculadora.div (n1,n2)
+else:
+  print ("Comando invalido")
