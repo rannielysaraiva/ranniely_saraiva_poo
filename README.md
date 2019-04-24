@@ -24,7 +24,7 @@
   Fiz todo o código
 - Com quem e como você fez
 
-  Fiz me baseando na questão do carro, como elas são bem parecidas deu pra resolver boa parte do código, o que não consegui entender       minha amiga me ajudou e conseguimos refazer o código.
+     Fiz me baseando na questão do carro, como elas são bem parecidas deu pra resolver boa parte do código, o que não consegui entender minha amiga me ajudou e conseguimos refazer o código.
 
 - O que aprendeu e sabe fazer
 
@@ -37,3 +37,29 @@
  - Quanto tempo levou
  
    Aproximadamente uma hora
+   
+
+  
+  
+  **03.CALCULADORA JAVA** 
+  
+  - O que você fez
+  
+      Refiz todo o código
+  
+  - Com quem e como você fez 
+  
+     Pra refazer esse código fui estudar toda a teoria, desde conceito de objeto até métodos especiais, vi um curso básico sobre orientação a objetos e assisti o vídeo da aula pra tentar refazer o código. Consegui fazer o código e esclareci muito das dúvidas que eu tinha, principalmente relacionado a sintaxe da linguagem, tive a ajuda de um amigo e conseguimos terminar o código.
+      
+ - O que aprendeu e sabe fazer
+    
+     Depois de assistir várias vídeos aulas e rever os vídeos das aulas, aprendi os conceitos básicos de atributos, métodos, métodos especias, e a sintaxe do Java que eu ainda não conseguia entender.
+      
+ - O que tem dificuldade ainda
+ 
+    Tenho bastante dificuldade na classe principal, principalmente na questão do import Scanner, tentei fazer com import mas ainda tenho muita dificuldade, então resolvi fazer sem essa função, mas vou continuar tentando até aprender para utilizar nas próximas questões.
+    
+    
+- Quanto tempo levou
+
+    Dois dias
